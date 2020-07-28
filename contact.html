@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>just university</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/pages.css" rel="stylesheet">
+</head>
+
+<body>
+
+ <div class="brand">JAMHURIA UNIVERSITY OF SCIENCE AND TECHNOLOGY(Just)</div>
+    <div class="address-bar">2011-2012| home of quality| mugdishu somalia</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+					 <li>
+                        <a href="Image.html">Image</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="help.html">help</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Contact
+                        <strong>jamhuria university</strong>
+                    </h2>
+					 <img class="img-responsive img-border img-full" src="img/logg.png" alt="">
+                    <hr>
+                </div>
+                <div class="col-md-8">
+                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <img class="img-responsive img-border img-left" src="img/slide-2.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <p>Phone:
+                        <strong>+252612223999</strong>
+                    </p>
+                    <p>Email:
+                        <strong><a href="mailto:info@.just.edu.so">info@.just.edu.so</a></strong>
+                    </p>
+                    <p>Address:
+                        <strong>hodan distruct
+                            <br>digfer</strong>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Register
+                        <strong>form</strong>
+                    </h2>
+                    <hr>
+<form action="index.html"method="post" onsubmit="return validation();">
+<fieldset>
+<legend>REGESTER PUT HERE</legend>
+First and last Name:<input type="text" name="name" id="name"><br>
+<br>
+Email address:<input type="Email" name="Email" id="Email"><br>
+<br>
+Your Password:<input type="Password" name="Password" id="Password"><br>
+<br>
+<label>Gender</label>
+<input type="radio" name="name" id="name" >male<input type="radio" name="name" id="name">female<br>
+<br>
+<label for="myDate">Birth Day</label><input type="date" name="myDate" id="myDate"> <br>
+<br>
+<label>School</label><select>
+<option>baxnan</option>
+<option>aqon bile</option>
+<option>yasin </option>
+<option>cumar samatr</option>
+<option>caamir</option>
+</select>
+<br>
+<br>
+<label>Foculties</label><select>
+<option>medicine</option>
+<option>education</option>
+<option>computer</option>
+<option>economic</option>
+<option>engneering</option>
+<option>sports</option>
+</select>
+<br>
+<br>
+<label>Hobies</label><select>
+<option>reading books</option>
+<option>palying games</option>
+<option>watching sports</option>
+<option>movies</option>
+<option>novel books</option>
+<option>any thing</option>
+</select><br>
+<br>
+<textarea>please enter your comment here </textarea>
+<br>
+<input type="submit" name="submit" id="insert now">
+</fieldset>
+</form>
+<div id="eresult"></div>
+<script>
+	function validation()
+	{
+  var name = document.getElementById('name').value;
+  var Email = document.getElementById('Email').value;
+  var Password = document.getElementById('Password').value;
+  if (name=="" || Password=="" || Email=="") 
+  	{
+
+  		document.getElementById("eresult").innerHTML = "all empty space";
+  		return false;
+  	} 
+  	else if (name.length<6)
+  	{
+  	document.getElementById("eresult").innerHTML = "magaca waxaa waajib ah in aat kadhig  6 xaraf";
+  	return false;	
+  	}
+  		else if (Password.length<8)
+  	{
+  	document.getElementById("eresult").innerHTML = "Password waxaa waajib ah in aat kadhig tit 8 xaraf";
+  	return false;	
+  	}
+  	else{
+  		return true;
+  	}
+}
+	</script>
+	
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Your Website 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
